@@ -1,0 +1,11 @@
+<h2>Create a new post!</h2>
+
+<%= form_for :post do |f| %>
+
+  <%= f.select :category_id, options_for_select([["Automobiles", 1], ["Appliances", 2]]) %>
+  Name: <%= f.text_field :name %><br>
+  Description: <%= f.text_field :description %><br>
+  Price: <%= f.password_field :price %><br>
+  Location: <%= f.text_field :location %><br>
+  <%= f.submit "create post" %>
+<% end %>

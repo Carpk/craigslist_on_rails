@@ -8,4 +8,4 @@ class User < ActiveRecord::Base
 
 end
 
-#TEST HAHAHAHA
+

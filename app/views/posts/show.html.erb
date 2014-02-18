@@ -1,0 +1,9 @@
+<h1><%= @post.name %></h1>
+
+<p><%= @post.description %></p>
+<p>$<%= @post.price %></p>
+<p>Location: <%= @post.location %></p>
+
+<p>Contact: <%= @post.user.email %> | <%= @post.user.phone %></p>
+
+<%= link_to 'back', :back %>

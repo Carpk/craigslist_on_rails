@@ -1,2 +1,8 @@
 <h1>HELLO!</h1>
 <h2>welcome to categories/index</h2>
+<p><%= link_to 'sign in', login_path %></p>
+<p><%= link_to 'sign up', new_user_path %></p>
+
+<% @categories.each do |category| %>
+  <p><%= link_to "#{category.title}", category %></p>
+<% end %>

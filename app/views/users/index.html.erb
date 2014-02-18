@@ -2,11 +2,6 @@
 <h2>welcome to users/index</h2>
 
 
-<%= form_for :user, {action: 'show'} do |f| %>
 
-  Email: <%= f.text_field :email %>
-  Password: <%= f.text_field :password %>
-  <%= f.submit "Login" %>
-<% end %>
 
 <%= link_to 'Sign Up', new_user_path %>
