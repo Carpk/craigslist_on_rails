@@ -11,9 +11,9 @@ Category.create(title: 'Appliances')
 Category.create(title: 'Furniture')
 Category.create(title: 'Bikes')
 
-User.create(name: 'Bill', password: 'password', 
-			password_confirmation: 'password', 
-			email: fake@fake.com, 
+User.create(name: 'Bill', password: 'password',
+			password_confirmation: 'password',
+			email: 'fake@fake.com',
 			phone: Faker::PhoneNumber.phone_number)
 
 50.times do
