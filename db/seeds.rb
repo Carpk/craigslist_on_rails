@@ -32,3 +32,9 @@ end
               price: rand(1..1000),
               location: Faker::Address.city)
 end
+
+300.times do
+  Comment.create(user_id: rand(1..50),
+                 post_id: rand(1..100),
+                 field: Faker::Lorem.paragraph)
+end
