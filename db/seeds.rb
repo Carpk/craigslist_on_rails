@@ -6,10 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Category.create(title: 'Automobiles')
-Category.create(title: 'Appliances')
-Category.create(title: 'Furniture')
-Category.create(title: 'Bikes')
+Category.create(title: 'Automobiles', description: Faker::Lorem.sentence)
+Category.create(title: 'Appliances', description: Faker::Lorem.sentence)
+Category.create(title: 'Furniture', description: Faker::Lorem.sentence)
+Category.create(title: 'Bikes', description: Faker::Lorem.sentence)
 
 User.create(name: 'Bill', password: 'password',
 			password_confirmation: 'password',

@@ -1,8 +1,24 @@
 <%= link_to 'back', categories_path %>
-<h1><%= @category.title %></h1>
 
-
-<% @posts.each do |post| %>
-  <p><%= link_to post.name, category_post_path(@category, post) %></p>
-<% end %>
-
+<div class="container">
+  <h2><%= @category.title %></h2>
+  <p><%= @category.description %></p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Seller</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr>
+          <td><%= link_to post.name, category_post_path(@category, post) %></td>
+          <td><%= post.price %> </td>
+          <td><%= post.user.name %></td>
+        <tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

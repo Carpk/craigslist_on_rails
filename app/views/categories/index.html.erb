@@ -17,17 +17,36 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Welcome!</h1>
-    <h2>welcome to categories/index</h2>
-    <p><%= link_to 'sign in', login_path %></p>
-    <p><%= link_to 'sign up', new_user_path %></p>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome!</h1>
+        <p>welcome to categories/index</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-7">
+          <p><%= link_to 'sign in', login_path %></p>
+          <p><%= link_to 'sign up', new_user_path %></p>
 
-    <% @categories.each do |category| %>
-      <p><%= link_to "#{category.title}", category %></p>
-    <% end %>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+          <% @categories.each do |category| %>
+            <p><%= link_to "#{category.title}", category %></p>
+          <% end %>
+        </div>
+        <div class="col-sm-3">
+          <h3>Reviews</h3>
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <footer>Some guy</footer>
+          </blockquote>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+      </div>
+    </div>
   </body>
+
 </html>
