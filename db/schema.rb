@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20150318150306) do
   create_table "categories", force: true do |t|
     t.string "title"
     t.string "description"
+    t.string "picture"
   end
 
   create_table "comments", force: true do |t|

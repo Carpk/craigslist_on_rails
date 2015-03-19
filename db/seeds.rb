@@ -6,10 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Category.create(title: 'Automobiles', description: Faker::Lorem.sentence)
-Category.create(title: 'Appliances', description: Faker::Lorem.sentence)
-Category.create(title: 'Furniture', description: Faker::Lorem.sentence)
-Category.create(title: 'Bikes', description: Faker::Lorem.sentence)
+Category.create(title: 'Automobiles', description: Faker::Lorem.sentence(6), picture: "assets/car.jpg")
+Category.create(title: 'Appliances', description: Faker::Lorem.sentence(6), picture: "assets/appliances.jpg")
+Category.create(title: 'Furniture', description: Faker::Lorem.sentence(6), picture: "assets/furniture.jpg")
+Category.create(title: 'Bikes', description: Faker::Lorem.sentence(6), picture: "assets/bike.jpg")
+Category.create(title: 'Jewelry', description: Faker::Lorem.sentence(6), picture: "assets/jewelry.jpg")
+Category.create(title: 'Cell Phones', description: Faker::Lorem.sentence(6), picture: "assets/cell-phones.jpg")
+Category.create(title: 'Clothes', description: Faker::Lorem.sentence(6), picture: "assets/clothes.jpg")
+Category.create(title: 'Tools', description: Faker::Lorem.sentence(6), picture: "assets/tools.jpg")
 
 User.create(name: 'Bill', password: 'password',
 			password_confirmation: 'password',
